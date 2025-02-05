@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "_theme_files",
+			"path": "../vue-crash-2024/_theme_files"
+		},
+		{
+			"name": "projName",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
