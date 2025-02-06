@@ -13,6 +13,15 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss()
   ],
+  server: {
+    proxy: {
+      '/daApi': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/daApi/, '')
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
